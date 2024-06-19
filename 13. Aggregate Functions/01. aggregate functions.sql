@@ -1,23 +1,27 @@
 use gfg;
-select * from products;
+SELECT * FROM products;
+-- Finding the number of products in the dataset
 
--- Find the products where the product name ends with s
-select * from products where product_name like '%s';
+SELECT count(*) as total_products FROM products ;
+SELECT count (product_name) as total_products FROM products;
 
--- Find the products where the brand name contains 'ad' 
-select * from products where brand_name like '%ad%';
+-- Finding the average discounted price of products in the dataset
+SELECT avg(discounted_price) as average_price FROM products ;
+SELECT avg(marked_price) as average_price FROM products;
 
--- Find the products where name stands with P and ends with S
-select * from products where brand_name like 'p%s';
+-- Finding the most expensive product on myntra
+SELECT max(discounted_price) as average_price FROM products;
+SELECT max(marked_price) as average_price FROM products;
 
--- Find the products where the product name starting with s
-select * from products where product_name like 'S%';
+-- Finding the least expensive product on myntra
+SELECT min (discounted_price) as average_price FROM products ;
+SELECT min (marked_price) as average_price FROM products ;
 
--- Find the products where the product name contains with 'sho'
-select * from products where product_name like '%SHO%';
+-- Find the total rating count of all products
+SELECT sum (rating_count) as total_rating FROM products ;
 
--- Find the products where the brans name is exactly of 6 cahracters long
-select * from products where brand_name like '______';
+-- Find the total unique brands
+SELECT DISTINCT (brand_name) as brands FROM products ;
 
--- Find the products where the second character of the brans name is s
-select * from products where brand_name like '_s%';
+-- Find the number of unique brands
+SELECT count(DISTINCT(brand_name)) as total_brands FROM products ;
