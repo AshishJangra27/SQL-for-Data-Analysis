@@ -9,8 +9,7 @@ SQL (Structured Query Language) is essential for managing and analyzing data in 
 
 ### Prerequisites
 
-- SQL database management system (e.g., MySQL, PostgreSQL, SQLite)
-- Database client or IDE (e.g., MySQL Workbench, pgAdmin, DBeaver)
+- SQL database management system (MySQL)
 - Basic knowledge of SQL
 
 ### Cloning the Repository
